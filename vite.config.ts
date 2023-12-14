@@ -16,7 +16,9 @@ const app = async (): Promise<UserConfigExport> => {
 
   return defineConfig({
     plugins: [
-      react(),
+      react({
+        jsxImportSource: '@emotion/react',
+      }),
       dts({
         insertTypesEntry: true,
       }),

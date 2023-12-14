@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import { AtButton } from './index'
+import { AtButton } from './components/atoms/at-button/index'
 
 describe('AtButton', () => {
   it('should render', async () => {

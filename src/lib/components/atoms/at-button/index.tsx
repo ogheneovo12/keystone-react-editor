@@ -1,4 +1,8 @@
 import { ButtonHTMLAttributes } from 'react'
+import { DocumentEditor } from '../../DocumentEditor'
+
+import { Descendant } from 'slate'
+import { defaultDocumentFeatures } from '../../DocumentEditor/defaultComponentFeatures'
 
 export const AT_BUTTON_VARIANT = {
   PRIMARY: 'primary',
@@ -19,15 +23,67 @@ export interface AtButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   isDisabled?: boolean
 }
 
+const initialValue: Descendant[] = [
+  {
+    type: 'heading',
+    children: [
+      {
+        text: 'This is the document editor.',
+      },
+    ],
+    level: 1,
+  },
+  {
+    type: 'paragraph',
+    children: [
+      {
+        text: 'Here’s just a few things you can do with it:',
+      },
+    ],
+  },
+  {
+    type: 'layout',
+    layout: [1, 1],
+    children: [
+      {
+        type: 'layout-area',
+        children: [
+          {
+            type: 'paragraph',
+            children: [
+              {
+                text: 'Add layout blocks',
+              },
+            ],
+          },
+          {
+            type: 'paragraph',
+            children: [
+              {
+                text: 'and all the usual ',
+              },
+              {
+                text: 'formatting',
+                code: true,
+              },
+              {
+                text: ' options',
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+]
+
 export const AtButton = ({ label, variant = 'PRIMARY', isDisabled = false, onClick }: AtButtonProps) => {
   return (
-    <button
-      className={`transition-colors px-6 py-2 rounded-md ${variantClasses[variant]} ${
-        isDisabled ? 'bg-gray-300 text-slate-600 cursor-not-allowed pointer-events-none' : ''
-      }`}
-      onClick={isDisabled ? onClick : undefined}
-    >
-      {label}
-    </button>
+    <DocumentEditor
+      value={initialValue}
+      onChange={(val) => {}}
+      documentFeatures={defaultDocumentFeatures}
+      componentBlocks={{}}
+    />
   )
 }
