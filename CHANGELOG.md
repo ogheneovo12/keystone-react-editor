@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/ogheneovo12/keystone-react-editor/compare/v1.0.1...v1.1.0) (2023-12-15)
+
+
+### Features
+
+* export default config option ([c6d0a41](https://github.com/ogheneovo12/keystone-react-editor/commit/c6d0a41d08869ab42b2e51c5db121cc36608287e))
+
 ## [1.0.1](https://github.com/ogheneovo12/keystone-react-editor/compare/v1.0.0...v1.0.1) (2023-12-15)
 
 
