@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/ogheneovo12/keystone-react-editor/compare/v1.1.0...v1.1.1) (2023-12-15)
+
+
+### Bug Fixes
+
+* updated entry files in package.json ([786bb0a](https://github.com/ogheneovo12/keystone-react-editor/commit/786bb0aabf994091597f7982c950fdc61f7c712f))
+
 ## [1.1.0](https://github.com/ogheneovo12/keystone-react-editor/compare/v1.0.1...v1.1.0) (2023-12-15)
 
 
