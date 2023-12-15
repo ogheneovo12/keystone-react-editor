@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.1](https://github.com/ogheneovo12/keystone-react-editor/compare/v1.0.0...v1.0.1) (2023-12-15)
+
+
+### Bug Fixes
+
+* excluded test from ts check ([6607dbc](https://github.com/ogheneovo12/keystone-react-editor/commit/6607dbc4e5b40f6492db7c7f1a1d1c68cda625b6))
+* temporary exclusion of tests files ([a927224](https://github.com/ogheneovo12/keystone-react-editor/commit/a927224739118a94ad49e8a8e92fe3a38b5f20e9))
+
 ## 1.0.0 (2023-12-15)
 
 
