@@ -19,5 +19,5 @@
   },
   "types": ["@emotion/react/types/css-prop"],
   "include": ["./src/**/*.ts", "./src/**/*.tsx"],
-  "exclude": ["./src/**/*.stories.*"]
+  "exclude": ["./src/**/*.stories.*", "./src/**/*.test.*"]
 }
