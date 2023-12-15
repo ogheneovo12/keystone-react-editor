@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.0 (2023-12-15)
+
+
+### Features
+
+* setup basic storybook doc ([ed66cd8](https://github.com/ogheneovo12/keystone-react-editor/commit/ed66cd8bec834d351623278b7c38b01c09b93a4c))
+
 ## [2.0.4](https://github.com/IgnacioNMiranda/vite-component-library-template/compare/v2.0.3...v2.0.4) (2023-09-10)
 
 
