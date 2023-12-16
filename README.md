@@ -30,7 +30,7 @@ function App(){
 
 return (
            <DocumentEditor
-                values={initialEditorValue}
+                value={initialEditorValue}
                 componentBlocks={{}}
                 documentFeatures={defaultDocumentFeatures}
               />
