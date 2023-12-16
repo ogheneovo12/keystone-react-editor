@@ -26,17 +26,17 @@ import {
   initialEditorValue,
 } from "keystone-react-editor";
 
-function App(){
-
-return (
-           <DocumentEditor
-                value={initialEditorValue}
-                componentBlocks={{}}
-                documentFeatures={defaultDocumentFeatures}
-              />
-
-)
-
+function App() {
+  return (
+    <DocumentEditor
+      initialValue={initialEditorValue}
+      componentBlocks={{}}
+      documentFeatures={defaultDocumentFeatures}
+      onChange={(value) => {
+        console.log(value);
+      }}
+    />
+  );
 }
 
 ```
