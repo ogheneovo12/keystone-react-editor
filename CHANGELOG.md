@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.3](https://github.com/ogheneovo12/keystone-react-editor/compare/v1.1.2...v1.1.3) (2023-12-16)
+
+
+### Bug Fixes
+
+* updated node engine requirement to 18 and above ([ac101a3](https://github.com/ogheneovo12/keystone-react-editor/commit/ac101a39f245f0b44f303433f70ca86381ed2ac9))
+
 ## [1.1.2](https://github.com/ogheneovo12/keystone-react-editor/compare/v1.1.1...v1.1.2) (2023-12-16)
 
 
