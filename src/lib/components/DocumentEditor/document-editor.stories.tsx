@@ -10,7 +10,7 @@ const meta: Meta<typeof DocumentEditor> = {
   title: 'DocumentEditor',
   component: DocumentEditor,
   args: {
-    value: initialEditorValue,
+    initialValue: initialEditorValue,
     onChange: (val: Descendant[]) => console.log(val),
     componentBlocks: {},
     documentFeatures: defaultDocumentFeatures,
@@ -25,7 +25,7 @@ const Template: StoryFn<typeof DocumentEditor> = (args: DocumentEditorProps) => 
 export const MainEditor = Template.bind({})
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 MainEditor.args = {
-  value: initialEditorValue,
+  initialValue: initialEditorValue,
   onChange: (val: Descendant[]) => console.log(val),
   componentBlocks: {},
   documentFeatures: defaultDocumentFeatures,

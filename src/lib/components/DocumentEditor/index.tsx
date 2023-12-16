@@ -167,7 +167,7 @@ export function createDocumentEditor(
 
 export type DocumentEditorProps = {
   onChange: undefined | ((value: Descendant[]) => void)
-  value: Descendant[]
+  initialValue: Descendant[]
   componentBlocks: Record<string, ComponentBlock>
   documentFeatures: DocumentFeatures
   initialExpanded?: boolean
@@ -175,7 +175,7 @@ export type DocumentEditorProps = {
 
 export function DocumentEditor({
   onChange,
-  value,
+  initialValue,
   componentBlocks,
   documentFeatures,
   initialExpanded = false,
@@ -199,7 +199,7 @@ export function DocumentEditor({
         componentBlocks={componentBlocks}
         documentFeatures={documentFeatures}
         editor={editor}
-        value={value}
+        value={initialValue}
         onChange={(value) => {
           onChange?.(value)
           // this fixes a strange issue in Safari where the selection stays inside of the editor
