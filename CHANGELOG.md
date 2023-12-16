@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/ogheneovo12/keystone-react-editor/compare/v1.1.1...v1.1.2) (2023-12-16)
+
+
+### Bug Fixes
+
+* changed value props to initialValue, to indicate the component  is an uncontrolled component ([dd43130](https://github.com/ogheneovo12/keystone-react-editor/commit/dd4313029cb0fb8acba9350a24ed56554ed9842f))
+
 ## [1.1.1](https://github.com/ogheneovo12/keystone-react-editor/compare/v1.1.0...v1.1.1) (2023-12-15)
 
 
