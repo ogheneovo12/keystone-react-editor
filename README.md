@@ -20,6 +20,7 @@ npm
 `npm install keystone-react-editor`
 
 ```
+import { useRef } from "react";
 import {
   DocumentEditor,
   defaultDocumentFeatures,
@@ -27,12 +28,14 @@ import {
 } from "keystone-react-editor";
 
 function App() {
+ const value = useRef(initialEditorValue)
   return (
     <DocumentEditor
-      initialValue={initialEditorValue}
+      initialValue={value.current}
       componentBlocks={{}}
       documentFeatures={defaultDocumentFeatures}
       onChange={(value) => {
+        value.current = value;
         console.log(value);
       }}
     />
@@ -41,7 +44,8 @@ function App() {
 
 ```
 `documentFeatures` is basically the layout specification, should match what was specified in the cms document field config
-
+ The Document Editor uses slate under the hood, which is an uncontrolled component, we are using ref so as to maintain the initialValue across rerenders, as the document 
+editor tends to remount for every rerender (using a state, leads to some weird behaviour, editor always remounting while being typed on).
 ## Contribution
 
 1. Clone your repo
