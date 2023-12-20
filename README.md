@@ -43,9 +43,11 @@ function App() {
 }
 
 ```
-`documentFeatures` is basically the layout specification, should match what was specified in the cms document field config
- The Document Editor uses slate under the hood, which is an uncontrolled component, we are using ref so as to maintain the initialValue across rerenders, as the document 
+`documentFeatures` is basically the layout specification, should match what was specified in the cms document field config. 
+
+The Document Editor uses slate under the hood, which is an uncontrolled component, we are using ref so as to maintain the initialValue across rerenders, as the document 
 editor tends to remount for every rerender (using a state, leads to some weird behaviour, editor always remounting while being typed on).
+
 ## Contribution
 
 1. Clone your repo
