@@ -1,6 +1,6 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-// import { graphql } from '@keystone-6/core'
+import { jsx } from '@emotion/react'
 
 import { type HTMLAttributes, type ReactElement, type ReactNode } from 'react'
 
@@ -573,7 +573,7 @@ export type ComponentBlock<Fields extends Record<string, ComponentSchema> = Reco
     }
 )
 
-type ChildFieldPreviewProps<Schema extends ChildField, ChildFieldElement> = {
+export type ChildFieldPreviewProps<Schema extends ChildField, ChildFieldElement> = {
   readonly element: ChildFieldElement
   readonly schema: Schema
 }

@@ -1,5 +1,6 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
+import { jsx } from '@emotion/react'
 
 import { Button } from '@keystone-ui/button'
 import { Stack } from '@keystone-ui/core'
