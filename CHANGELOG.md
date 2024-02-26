@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/ogheneovo12/keystone-react-editor/compare/v1.1.3...v1.2.0) (2024-02-26)
+
+
+### Features
+
+* updated lib export ([24d52b3](https://github.com/ogheneovo12/keystone-react-editor/commit/24d52b3864f71900278c7a0f20798894df6d1743))
+
 ## [1.1.3](https://github.com/ogheneovo12/keystone-react-editor/compare/v1.1.2...v1.1.3) (2023-12-16)
 
 
